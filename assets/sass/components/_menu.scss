@@ -1,0 +1,212 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+    html {
+    margin-top: 0 !important;
+    }
+
+    @media screen and (max-width: 782px) {
+    html {
+    margin-top: 0 !important;
+    }
+    }
+
+    body {
+    height: 100%;
+    font-family: "Oswald";
+    margin: 0;
+    }
+
+    #wrapper {
+    background-repeat: repeat-x, repeat-y;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    }
+
+ /*********************** The Menu Starts Here ************************/
+
+    #main {
+    margin-top: 0px;
+    }
+
+    .container-fluid {
+    background: linear-gradient(burlywood, bisque);
+    margin-top: -5px;
+    }
+
+    .navbar {
+    margin-bottom: 0;
+    }
+
+    .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+    .navbar-collapse {
+    @media (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(bisque, burlywood);
+    padding-bottom: 25px;
+    padding-top: 30px;
+
+    a:hover {
+      background: linear-gradient(bisque, burlywood);
+    }
+    }
+
+    .navbar-collapse #menu-menu li a:hover {
+    color: #196d11;
+    }
+
+    #menu-menu {
+    padding-left: 0;
+    list-style: none;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background: none;
+
+    @media (min-width: 768px) {
+    background: linear-gradient(bisque, burlywood);
+    }
+
+    ul {
+    display: block;
+    overflow: hidden;
+    margin-left: 0;
+    padding-left: 0;
+    }
+
+    li {
+    display: inline-block;
+    @media (max-width: 767px) {
+    float: none;
+    display: block;
+    border-left: none;
+    }
+
+    a {
+    display: block;
+    color:  #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style-type: none;
+
+    &:hover {
+    color: #fff;
+    }
+    }
+    }
+    }
+    }
+
+    ol, ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+    #menu-item-53 a {
+    padding-right: 95px;
+    }
+/***************************** The Menu Ends Here *****************************/
+
+    .icon-bar1, .icon-bar2, .icon-bar3 {
+    background: #000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.2s;
+    }
+
+    .navbar-toggle {
+    &.open{
+    .icon-bar2{
+    opacity: 0;
+    }
+
+    .icon-bar1 {
+    transform: rotate(135deg);
+    position: relative;
+    top: 6px;
+    left: 0px;
+    }
+
+    .icon-bar3 {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -6px;
+    left: 0px;
+    }
+    }
+    }
+
+/********************************* LOGO START *********************************/
+
+    .navbar-brand {
+    color: #000;
+    margin-left: 5px;
+    height: 32px;
+    visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    padding: 14px 16px;
+    font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+    .navbar-brand {
+    visibility: visible;
+    padding-top: 11px;
+    }
+    }
+
+    .navbar-brand:hover {
+    color: #fff;
+    }
+
+
+/********************************** LOGO END **********************************/
+
+    .hero {
+    margin-top: -6px;
+    }
+
+    button {
+    background-color: none;
+    border: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    border-radius: 3p;
+    }
+
+    // button:focus {
+    // background-color: rgba(#196d11, 0.5);
+    // outline: none;
+    // }
+
+    .home-menu {
+    padding-left: 0px;
+    }
+
+    @media (min-width: 768px) {
+    .home-menu {
+    padding-left: 120px;
+    }
+    }
+
+    .navbar-expand-lg {
+    margin-left: -2px;
+    margin-right: -2px;
+    }

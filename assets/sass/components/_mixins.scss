@@ -1,0 +1,78 @@
+// Animations & Transitions
+    @mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+    }
+
+    @mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+    }
+
+// Others
+    @mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie);
+    }
+
+// Generic transform
+    @mixin transform($transforms) {
+	  -moz-transform: $transforms;
+	  -o-transform: $transforms;
+	  -ms-transform: $transforms;
+	  -webkit-transform: $transforms;
+    transform: $transforms;
+    }
+
+// Clearfix
+    %clearfix {
+    &:after {
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+    }
+    }
+
+// Input styles
+    @mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+    }
+
+// Fallback for svg
+    @mixin svg-background-fallback($image-url, $svg-url) {
+    background: url($image-url);
+    background: url($svg-url), linear-gradient(transparent, transparent);
+    }
+
+// Query mixins
+    @mixin phone {
+    @media only screen and (max-width: 640px) and (orientation:portrait) {
+    @content;
+    }
+    @media only screen and (min-width: 640px) and (max-width: 767px) and (orientation:landscape) {
+    @content;
+    }
+    }
+
+    @mixin tablet {
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+    @content;
+    }
+    }
+
+    @mixin tabletLandscape {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    @content;
+    }
+    }

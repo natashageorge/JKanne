@@ -1,0 +1,99 @@
+// Content from the WordPress editor
+    // h4{
+    // color: #000;
+    // }
+    //
+    // h5{
+    // // float: right;
+    //   color: #000;
+    //   padding: 3px;
+    //   display: block;
+    //   text-align: left;
+    //   padding-top: 15px;
+    // }
+
+    .component_content{
+    margin-top: 100px;
+    float: none;
+    text-align: center;
+    }
+
+    .text-box {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    }
+
+     p {
+     box-shadow: 2px 2px 5px #000;
+     color: #000;
+     font-size: 16px;
+     margin-bottom: 0;
+     // padding: 100px;
+     }
+
+   @media (max-width: 768px) {
+   p {
+   box-shadow: 2px 2px 5px #000;
+   }
+   }
+
+    .ruta {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 50px; //DEN här kan komma att behövas...
+
+    }
+
+    .ruta1 {
+    padding: 4px;
+    }
+
+    h1 {
+    color: #000;
+    // background: rgba(burlywood, bisque, 0.9);
+    box-shadow: 2px 2px 5px #000;
+    padding: 5px;
+    }
+
+//     // h1:hover {
+//     // background-color: #fff;
+//     // }
+
+    .ruta2, .ruta3, .ruta4, .ruta5, .ruta6 {
+      background: linear-gradient(bisque, burlywood);
+    }
+
+    @media (min-width: 576px) {
+      .container {
+        max-width: 100%;
+      }
+}
+
+
+// .ruta2 {
+//   padding-bottom: 30px;
+//   padding-top: 30px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+// }
+
+.btn-primary {
+  background: #000;
+}
+
+
+
+
+// TESTAR BARA NU
+
+.gform_wrapper form {
+  text-align: center; 
+}
+
+.gform_wrapper .ginput_complex .ginput_left input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex .ginput_right input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image])
+:not([type=file]), .gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex, select {
+  font-size: 16px;
+}
